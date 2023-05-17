@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA</title>
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" type="x-icon" href="./Images/Logo-removebg-preview.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./CSS/Components/alert.css">
+    <link rel="stylesheet" href="./CSS/Components/all.css">
+    <link rel="stylesheet" href="./CSS/Components/card.css">
+    <link rel="stylesheet" href="./CSS/Components/footer.css">
+    <link rel="stylesheet" href="./CSS/Components/media.css">
+    <link rel="stylesheet" href="./CSS/Components/navbar.css">
+    <link rel="stylesheet" href="./CSS/Components/pagination.css">
+    <link rel="stylesheet" href="./CSS/Components/products.css">
+    <link rel="stylesheet" href="./CSS/Components/scrollup.css">
+    <link rel="stylesheet" href="./CSS/Components/services.css">
+    <link rel="stylesheet" href="./CSS/Components/slider.css">
+    <link rel="stylesheet" href="./CSS/Components/aboutProduct.css">
+    <link rel="stylesheet" href="./CSS/Pages/home.css">
+    <script src="./JS/data.js"></script>
+</head>
+
+<body>
+
+    <section class="content" id="blur">
+
+        <a href="#" class="scroll-up"><i class="fa-solid fa-turn-up"></i></a>
+
+        <header>
+            <div class="container">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="logo"><span>E</span>C<span>M</span>A</div>
+                <div class="navigator">
+                    <nav class="nav-bar">
+                        <ul>
+                            <li><a id="home" href="#">Home</a></li>
+                            <li><a href="#product">Product</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="cart">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="cart-number">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="slider-wrapper">
+            <div class="slider container">
+                <div id="slide1" class="slide container">
+                    <div class="slide-data">
+                        <h2>Fashion</h2>
+                        <q>Fashion is the armor to survive the reality of everyday life.</q>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rem atque distinctio
+                            similique sapiente, eligendi laborum officiis id amet necessitatibus qui blanditiis
+                            quibusdam, magni quas voluptatibus at pariatur odit error.</p>
+                        <a href="#" class="explore">Get Your Fashion</a>
+                    </div>
+                    <img src="./Images/slide3.png" loading="lazy" alt="" class="image">
+                </div>
+                <div id="slide2" class="slide container">
+                    <div class="slide-data">
+                        <h2>Fashion</h2>
+                        <q>Fashion is the armor to survive the reality of everyday life.</q>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rem atque distinctio
+                            similique sapiente, eligendi laborum officiis id amet necessitatibus qui blanditiis
+                            quibusdam, magni quas voluptatibus at pariatur odit error.</p>
+                        <a href="#" class="explore">Get Your Fashion</a>
+                    </div>
+                    <img src="./Images/slide4.png" alt="" loading="lazy" class="image">
+                </div>
+                <div id="slide3" class="slide container">
+                    <div class="slide-data">
+                        <h2>Fashion</h2>
+                        <q>Fashion is the armor to survive the reality of everyday life.</q>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rem atque distinctio
+                            similique sapiente, eligendi laborum officiis id amet necessitatibus qui blanditiis
+                            quibusdam, magni quas voluptatibus at pariatur odit error.</p>
+                        <a href="#" class="explore">Get Your Fashion</a>
+                    </div>
+                    <img src="./Images/slide6.png" alt="" loading="lazy" class="image">
+                </div>
+                <div class="slide-nav">
+                    <a href="#" class="active"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- start -->
+        <div class="product-collection">
+            <div class="container">
+                <div class="product-collection-wrapper">
+                    <!-- product col left -->
+                    <div class="product-col-left flex">
+                        <div class="product-col-content">
+                            <h3 class="sm-title">Men's shoes </h3>
+                            <h3 class="md-title">Men's collection </h3>
+                            <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+                                consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum.</p>
+                        </div>
+                    </div>
+
+                    <!-- product col right -->
+                    <div class="product-col-right">
+                        <div class="product-col-r-top flex">
+                            <div class="product-col-content">
+                                <h3 class="sm-title">Women's dresses </h3>
+                                <h3 class="md-title">Women's collection </h3>
+                                <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Molestiae consequatur facilis eligendi quibusdam voluptatibus</p>
+                            </div>
+                        </div>
+
+                        <div class="product-col-r-bottom">
+                            <!-- left -->
+                            <div class="flex">
+                                <div class="product-col-content">
+                                    <h3 class="sm-title">Summer sale </h3>
+                                    <h3 class="md-title">Extra 50% Off </h3>
+                                    <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <!-- right -->
+                            <div class="flex">
+                                <div class="product-col-content">
+                                    <h3 class="sm-title">Shoes </h3>
+                                    <h3 class="md-title">best sellers </h3>
+                                    <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  End  -->
+        <!-- Start of Product Section-->
+        <section id="product" class="categories">
+            <h1 class="section-title">Our Products</h1>
+            <!-- strat of navigator -->
+            <div class="product-navigator">
+                <a href="#" class="all-products">All</a>
+                <a href="#" class="phones">Phones</a>
+                <a href="#" class="labtops">Labtops</a>
+                <a href="#" class="make-up">Make Up</a>
+                <a href="#" class="clothes">Clothes</a>
+            </div>
+            <!-- End of navigator -->
+            <section class="products">
+                
+            </section>
+            <div class="pagination">
+                <div class="directions">
+                    <span class="prev fa-solid fa-arrow-left-long"></span>
+                    <span class="current">1</span>
+                    of
+                    <span class="total">4</span>
+                    <span class="next fa-solid fa-arrow-right-long"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories top-rated-products">
+            <h3 class="section-title">Top Rated</h3>
+            <div class="products top-rated">
+                <div class="card1">
+                    <div class="card-img"><img class="item-img" loading="lazy" src="./Images/Clothes/Al Ahly T-Shirt.jpg"></div>
+                    <div class="card-body">
+                        <h3 class="item-name">Al Ahly T-Shirt</h3>
+                        <div class="price-rate">
+                            <div class="item-rate">
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star-half-stroke star"></span>
+                            </div>
+                            <span class="price">$12.39</span>
+                        </div>
+                        <p class="card-text">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                            Lorem
+                            jeamsun denim lorem jeansum.</p>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="card-img"><img class="item-img" loading="lazy" src="./Images/Make Up/Kiko MILANO Smart Fusion.jpeg">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="item-name">Kiko Smart Fusion</h3>
+                        <div class="price-rate">
+                            <div class="item-rate">
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star-half-stroke star"></span>
+                            </div>
+                            <span class="price">$7.50</span>
+                        </div>
+                        <p class="card-text">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                            Lorem
+                            jeamsun denim lorem jeansum.</p>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="card-img"><img class="item-img" loading="lazy" src="./Images/Laptops/Laptop ROG Strix.jpg"></div>
+                    <div class="card-body">
+                        <h3 class="item-name">Laptop ROG Strix</h3>
+                        <div class="price-rate">
+                            <div class="item-rate">
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star-half-stroke star"></span>
+                            </div>
+                            <span class="price">$15000</span>
+                        </div>
+                        <p class="card-text">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                            Lorem
+                            jeamsun denim lorem jeansum.</p>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="card-img"><img class="item-img" loading="lazy" src="./Images/phones/Huawei/Huawei Y7A.jpg"></div>
+                    <div class="card-body">
+                        <h3 class="item-name">Huawei Y7A</h3>
+                        <div class="price-rate">
+                            <div class="item-rate">
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star star"></span>
+                                <span class="fa-solid fa-star-half-stroke star"></span>
+                            </div>
+                            <span class="price">$5500</span>
+                        </div>
+                        <p class="card-text">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                            Lorem
+                            jeamsun denim lorem jeansum.</p>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- End of Product Section-->
+
+        <!-- start of New Arrival Section -->
+        <div class="product-collection">
+            <h1 class="section-title">New Arrivals</h1>
+            <div class="container">
+                <div class="product-collection-wrapper">
+                    <div class="product-col-right col-left">
+                        <div class="product-col-r-top flex">
+                            <div class="product-col-content">
+                                <h3 class="sm-title">Makeup collection </h3>
+                                <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Molestiae consequatur facilis eligendi quibusdam voluptatibus</p>
+                                <button class="btn shop-now"><i class="fa-brands fa-opencart"></i> Shop now</button>
+                            </div>
+                        </div>
+    
+                        <div class="product-col-r-bottom">
+                            <!-- left -->
+                            <div class="flex">
+                                <div class="product-col-content">
+                                    <h3 class="sm-title">Winter Collection</h3>
+                                    <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <button class="btn shop-now"><i class="fa-brands fa-opencart"></i> Shop now</button>
+                                </div>
+                            </div>
+                            <!-- right -->
+                            <div class="flex">
+                                <div class="product-col-content">
+                                    <h3 class="sm-title">New Brand</h3>
+                                    <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <button class="btn shop-now"><i class="fa-brands fa-opencart"></i> Shop now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- product col right -->
+                    <div class="product-col-right col-right">
+                        <div class="product-col-r-top flex">
+                            <div class="product-col-content">
+                                <h3 class="sm-title">Women's Accessories</h3>
+                                <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Molestiae consequatur facilis eligendi quibusdam voluptatibus</p>
+                                <button class="btn shop-now"><i class="fa-brands fa-opencart"></i> Shop now</button>
+                            </div>
+                        </div>
+    
+                        <div class="product-col-r-bottom">
+                            <!-- left -->
+                            <div class="flex">
+                                <div class="product-col-content">
+                                    <h3 class="sm-title">labtop Collection</h3>
+                                    <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <button class="btn shop-now"><i class="fa-brands fa-opencart"></i> Shop now</button>
+                                </div>
+                            </div>
+                            <!-- right -->
+                            <div class="flex">
+                                <div class="product-col-content">
+                                    <h3 class="sm-title">Men Accessories</h3>
+                                    <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <button class="btn shop-now"><i class="fa-brands fa-opencart"></i> Shop now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <!-- End of New Arrival Section -->
+
+        <!-- Start Section Services -->
+        <section class="services-sec" id="services">
+            <h1 class="section-title">
+                Services
+            </h1>
+            <div class="row">
+                <div class="col">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Fast & Free Delivery</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quia, modi
+                        reiciendis optio
+                        repudiandae</p>
+                </div>
+                <div class="col">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <h3>Secure Payment</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quia, modi
+                        reiciendis optio
+                        repudiandae</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <h3>Money Back</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quia, modi
+                        reiciendis optio
+                        repudiandae</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-business-time"></i>
+                    <h3>Online Support</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quia, modi
+                        reiciendis optio
+                        repudiandae</p>
+                </div>
+            </div>
+        </section>
+        <!-- End of Section Services -->
+
+        <!-- Start of Footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">affiliate program</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">shipping</a></li>
+                                <li><a href="#">returns</a></li>
+                                <li><a href="#">order status</a></li>
+                                <li><a href="#">payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>online shop</h4>
+                            <ul>
+                                <li><a href="#">phones</a></li>
+                                <li><a href="#">labtops</a></li>
+                                <li><a href="#">makeup</a></li>
+                                <li><a href="#">clothes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>All Rights Reserved &copy; Mohamed Samir 2023 ITI</p>
+        </footer>
+        <!-- End of Footer -->
+    </section>
+
+    <section class="about-product container">
+        
+        <i class="close fa-solid fa-xmark"></i>
+        <div class="item-img">
+            <img id="img" src="" loading="lazy" alt="product image">
+        </div>
+        <div class="item-details">
+            <h1 class="item-name">Item Name</h1>
+            <div class="item-rate">
+                <!-- fa-solid fa-star | fa-solid fa-star-half-stroke | fa-regular fa-star-->
+                <span class="fa-solid fa-star star"></span>
+                <span class="fa-solid fa-star star"></span>
+                <span class="fa-solid fa-star star"></span>
+                <span class="fa-solid fa-star-half-stroke star"></span>
+                <span class="fa-regular fa-star star"></span>
+                <span class="rate">3.7 (50)</span>
+            </div>
+            <!-- Item Price -->
+            <div class="item-price">
+                <h3 class="price">
+                    Price: $<span class="regular-price">249.99</span>
+                </h3>
+            </div>
+
+            <!-- End of Item Price -->
+            <!-- Start of About Item -->
+            <div class="about-item">
+                <h3 class="about-title">About This Item:</h3>
+                <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                    perferendis
+                    perspiciatis corporis
+                    nam dicta nihil enim ratione eligendi ex placeat molestiae vel saepe ullam voluptas nulla
+                    doloremque, nobis temporibus! Eaque?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit, corporis
+                    odit
+                    esse cupiditate ea dolores impedit!
+                </p>
+                <div class="item-specific-details">
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="title">Available: </span>
+                        <span class="available">in stock</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="title">Category: </span>
+                        <span class="category">Clothes</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="title">Quantity: </span>
+                        <span class="decrease fa-solid fa-minus"></span>
+                        <span class="quantity">1</span>
+                        <span class="increase fa-solid fa-plus"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- End of About Item -->
+
+            <div class="add-item">
+                <button class="add-to-cart">Add to Cart
+                    <i class="fa fa-shopping-cart"></i> </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Alert -->
+    <div class="alert">
+        <span class="fa-solid fa-circle-check icon"></span>
+        <span class="alert-msg">Your item Added to Cart Successfully</span>
+        <div class="close-btn">
+            <span class="fa-solid fa-xmark"></span>
+        </div>
+    </div>
+    <!-- End of Alert -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="./JS/slider.js"></script>
+    <script src="./JS/navbar.js"></script>
+    <script src="./JS/aboutProduct.js"></script>
+    <script src="./JS/productSection.js"></script>
+    <script src="./JS/showProducts.js"></script>
+    <script src="./JS/showItem.js"></script>
+</body>
+
+</html>

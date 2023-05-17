@@ -1,0 +1,54 @@
+
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.directions span.prev,
+.directions span.next{
+    display: inline-block;
+    background-color: var(--secondry-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 2px solid var(--secondry-color);
+    color: var(--items-color);
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: var(--mid-duration);
+    -webkit-transition: var(--mid-duration);
+    -moz-transition: var(--mid-duration);
+    -ms-transition: var(--mid-duration);
+    -o-transition: var(--mid-duration);
+}
+
+.directions span.active {
+    background-color: #fff;
+    color: var(--secondry-color);
+}
+
+.directions span.active:hover{
+    background-color: #fff !important;
+    cursor: auto;
+}
+
+.directions span.current{
+    margin-left: 10px;
+}
+
+.directions span.total{
+    margin-right: 10px;
+}
+
+.directions span.prev:hover, 
+.directions span.next:hover{
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}

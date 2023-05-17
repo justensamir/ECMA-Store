@@ -1,0 +1,115 @@
+
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories .product-navigator{
+    margin-top: 50px;
+    width: 900px;
+    border-bottom: 2px solid #DDD;
+    text-align: center;
+    
+}
+
+.categories .product-navigator a{
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 20px 10px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--back-color);
+    transform: translateX(-15%);
+    -webkit-transform: translateX(-15%);
+    -moz-transform: translateX(-15%);
+    -ms-transform: translateX(-15%);
+    -o-transform: translateX(-15%);
+}
+
+.product-navigator a::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: var(--zero-width);
+    background-color: rgb(9, 110, 110);
+    bottom: -2px;
+    left: 0;
+    transition: var(--large-duration);
+    -webkit-transition: var(--large-duration);
+    -moz-transition: var(--large-duration);
+    -ms-transition: var(--large-duration);
+    -o-transition: var(--large-duration);
+}
+
+.product-navigator a:hover::before {
+    width: 100%;
+}
+
+.products{
+    position: relative;
+    display: grid;
+    min-height: 300px;
+    margin: 50px auto;
+    gap: 30px; 
+}
+
+@media (max-width: 500px){
+    .products, .row{
+        grid-template-columns: repeat(1, minmax(280px, 1fr));
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    .categories .product-navigator{
+        width: 280px;
+    }
+    .loader{
+        left: 45%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 650px){
+    .products, .row{
+        grid-template-columns: repeat(1, minmax(280px, 1fr));
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    .categories .product-navigator{
+        width: 450px;
+    }
+}
+
+@media (min-width: 650px){
+    .products, .row{
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+    .categories .product-navigator{
+        width: 500px;
+    }
+    
+}
+
+@media (min-width: 950px) and (max-width: 1249px){
+    .products, .row{
+        grid-template-columns: repeat(3, minmax(280px, 1fr));
+    }
+    .categories .product-navigator{
+        width: 700px;
+    }
+}
+
+@media (min-width: 1250px){
+    .products, .row{
+        grid-template-columns: repeat(4, minmax(280px, 1fr));
+    }
+    .categories .product-navigator{
+        width: 900px;
+    }
+}

@@ -1,0 +1,289 @@
+
+
+#blur.active {
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.nav-bar ul li #home:before {
+    width: 100%;
+}
+
+.top-rated .card1 {
+    overflow: visible;
+    background-color: var(--items-color);
+}
+
+.top-rated .card1:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+
+.top-rated .card1 .buy {
+    display: block;
+    background-color: red;
+    color: #fff;
+    padding: 15px 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    width: 280px;
+    margin-left: -20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 20px;
+    transition: var(--large-duration);
+    -webkit-transition: var(--large-duration);
+    -moz-transition: var(--large-duration);
+    -ms-transition: var(--large-duration);
+    -o-transition: var(--large-duration);
+}
+
+.top-rated .card1:first-child .buy {
+    background-color: #941326;
+}
+
+.top-rated .card1:first-child .buy:hover {
+    background-color: #72101f;
+}
+
+.top-rated .card1:nth-child(2) .buy {
+    background-color: #303030;
+}
+
+.top-rated .card1:nth-child(2) .buy:hover {
+    background-color: #202020;
+}
+
+.top-rated .card1:nth-child(3) .buy {
+    background-color: #5d147e;
+}
+
+.top-rated .card1:nth-child(3) .buy:hover {
+    background-color: #491263;
+}
+
+.top-rated .card1:last-child .buy {
+    background-color: #016466;
+}
+
+.top-rated .card1:last-child .buy:hover {
+    background-color: #054a4b;
+}
+
+/* product collection */
+
+.product-collection-wrapper {
+    padding: 2.2rem 0;
+}
+
+.product-col-left {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.3)), 
+                url("../../Images/men\ shoes.jpg") center/cover no-repeat;
+    cursor: pointer;
+}
+
+.product-col-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: var(--large-duration);
+    -webkit-transition: var(--large-duration);
+    -moz-transition: var(--large-duration);
+    -ms-transition: var(--large-duration);
+    -o-transition: var(--large-duration);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-col-left:hover .product-col-content,
+.product-col-r-top:hover .product-col-content,
+.product-col-r-bottom>div:first-child:hover .product-col-content,
+.product-col-r-bottom>div:last-child:hover .product-col-content {
+    opacity: 1;
+}
+
+.product-col-left::before,
+.product-col-r-top::before,
+.product-col-r-bottom>div:first-child::before,
+.product-col-r-bottom>div:last-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: var(--large-duration);
+    -webkit-transition: var(--large-duration);
+    -moz-transition: var(--large-duration);
+    -ms-transition: var(--large-duration);
+    -o-transition: var(--large-duration);
+}
+
+.product-col-left:hover::before,
+.product-col-r-top:hover::before,
+.product-col-r-bottom>div:first-child:hover::before,
+.product-col-r-bottom>div:last-child:hover::before {
+    opacity: 1;
+}
+
+.product-col-r-top {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), 
+                url("../../Images/dress.jpg") top/cover no-repeat;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 2rem 1.5rem 3.2rem;
+    margin: 5px;
+}
+
+.product-col-r-bottom>div:first-child {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), 
+                url("../../Images/shirt.jpg") center/cover no-repeat;
+    cursor: pointer;
+}
+
+.product-col-r-bottom>div:last-child {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), 
+                url("../../Images/women\ shoes.jpg") center/cover no-repeat;
+    cursor: pointer;
+}
+
+.product-col-content {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.product-collection .text-light {
+    opacity: 1;
+    font-size: 0.8;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* New Arrivals */
+
+.col-left .product-col-r-top{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), 
+                url("../../Images/makeup\ collection.jpg") center/cover no-repeat;
+}
+
+.col-left .product-col-r-bottom>div:first-child {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), 
+                url("../../Images/winter\ collection.jpeg") center/cover no-repeat;
+}
+
+.col-left .product-col-r-bottom>div:last-child{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), 
+                url("../../Images/new\ brand.jpg") center/cover no-repeat;
+}
+
+.col-right .product-col-r-top{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), 
+                url("../../Images/women\ accessories.jpeg") top/cover no-repeat;
+}
+
+.col-right .product-col-r-bottom>div:first-child {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), 
+                url("../../Images/labtop.jpg") center/cover no-repeat;
+}
+
+.col-right .product-col-r-bottom>div:last-child{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), 
+                url("../../Images/men\ accessories.jpeg") center/cover no-repeat;
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--secondry-color);
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: var(--large-duration);
+    cursor: pointer;
+    -webkit-transition: var(--large-duration);
+    -moz-transition: var(--large-duration);
+    -ms-transition: var(--large-duration);
+    -o-transition: var(--large-duration);
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Media Queries */
+
+@media (max-width:770px){
+    .btn{
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .product-col-r-bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .product {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .products .text-light {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .product-collection-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flex,
+    .product-col-left {
+        height: 40vh;
+    }
+
+    .product-col-left {
+        height: calc(80vh + 8px);
+    }
+}
