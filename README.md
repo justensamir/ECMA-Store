@@ -1,5 +1,5 @@
 # ECMA-Store
-## ITI Java Script Ecommerce Website
+## ITI JavaScript Ecommerce Website
 
 Ecommerce Website consist of 4 main Pages [Home - about – Contact US - Cart]
 
