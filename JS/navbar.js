@@ -19,8 +19,8 @@ links[0].addEventListener('click',function(){
     resetLinks();
     nav.classList.remove('active');
     links[0].classList.add('active');
-    if(ref !== '../home.html'){
-        window.location.href = `../home.html`;
+    if(ref !== '../index.html'){
+        window.location.href = `../index.html`;
     }
 });
 
@@ -28,8 +28,8 @@ links[1].addEventListener('click',function(){
     resetLinks();
     nav.classList.remove('active');
     links[1].classList.add('active');
-    if(ref !== '../home.html#product'){
-        window.location.href = `../home.html#product`;
+    if(ref !== '../index.html#product'){
+        window.location.href = `../index.html#product`;
     }
 });
 
@@ -37,8 +37,8 @@ links[2].addEventListener('click',function(){
     resetLinks();
     nav.classList.remove('active');
     links[2].classList.add('active');
-    if(ref !== '../home.html#services'){
-        window.location.href = `../home.html#services`;
+    if(ref !== '../index.html#services'){
+        window.location.href = `../index.html#services`;
     }
 });
 
